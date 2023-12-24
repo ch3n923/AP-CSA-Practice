@@ -1,13 +1,37 @@
+/**
+ * This class provides methods for calendar calculations.
+ * @author zipeng zheng
+ * 
+ */
 public class APCalendar{
+    /**
+     * Checks if a year is a leap year.
+     *
+     * @param year the year to check
+     * @return true if the year is a leap year, false otherwise
+     */
     public static boolean isLeapYear(int year){
         return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
     }
 
+    /**
+     * Calculates the number of leap years between two years.
+     *
+     * @param year1 the start year
+     * @param year2 the end year
+     * @return the number of leap years between year1 and year2
+     */
     public static int numberOfLeapYears(int year1, int year2){
         return 0;
         //TODO: to be implementing in part (a)
     }
 
+    /**
+     * Calculates the day of the week for the first day of a year.
+     *
+     * @param year the year
+     * @return the day of the week, where 0 represents Sunday, 1 represents Monday, etc.
+     */
     public static int firstDayOfYear(int year){
         //By calulating with Zeller's congurence
         int m = 13;
@@ -30,6 +54,14 @@ public class APCalendar{
         return h;
     }
 
+    /**
+     * Calculates the day of the year for a given date.
+     *
+     * @param month the month of the date
+     * @param day the day of the date
+     * @param year the year of the date
+     * @return the day of the year
+     */
     public static int dayOfYear(int month, int day, int year){
         if (month == 1)
         {
@@ -60,6 +92,14 @@ public class APCalendar{
         return h;
     }
 
+    /**
+     * Calculates the day of the week for a given date.
+     *
+     * @param month the month of the date
+     * @param day the day of the date
+     * @param year the year of the date
+     * @return the day of the week, where 0 represents Sunday, 1 represents Monday, etc.
+     */
     public static int dayOfWeek(int month, int day, int year){
         return 0;
         //TODO: to be implemented in part(b)
