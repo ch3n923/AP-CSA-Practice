@@ -1,8 +1,11 @@
-package frq2019.Q2;
+
 
 /*
  * The following class should not has any error after the correct implemtation of
  * StepTracker class.
+ * 
+ * If the step Tracker class were implemented correctly, 
+ * it should print out true for each print statement
  */
 public class StepTrackerTest {
     public static void main(String[] args) {
