@@ -1,10 +1,8 @@
-package frq2019.Q3;
-
 import java.util.ArrayList;
 
 public class Delimiters {
-    private String openDel;
-    private String closeDel;
+    String openDel;
+    String closeDel;
 
     public Delimiters(String open, String close){
         openDel = open;
